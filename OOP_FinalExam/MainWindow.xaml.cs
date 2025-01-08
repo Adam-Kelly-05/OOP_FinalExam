@@ -18,6 +18,16 @@ namespace OOP_FinalExam
     /// </summary>
     public partial class MainWindow : Window
     {
+        Event Event1 = new Event() { Name = "Oasis Croke Park", EventDate = new DateTime(2025, 06, 20), TypeOfEvent = EventType.Music };
+        Event Event2 = new Event() { Name = "Electric Picnic", EventDate = new DateTime(2025, 08, 20), TypeOfEvent = EventType.Music };
+
+        Ticket Ticket1 = new Ticket() { Name = "Early Bird", Price = 100m, AvailableTickets = 100 };
+        Ticket Ticket2 = new Ticket() { Name = "Platinium", Price = 150m, AvailableTickets = 100 };
+
+        VIPTicket VIPTicket1 = new VIPTicket() { Name = "Ticket and Hotel Package", Price = 150m, AdditionalCost = 100m, AdditionalExtras = "4* hotel", AvailableTickets = 100 };
+        VIPTicket VIPTicket2 = new VIPTicket() { Name = "Weekend Ticket", Price = 200m, AdditionalCost = 100m, AdditionalExtras = "with camping", AvailableTickets = 100 };
+
+
         public MainWindow()
         {
             InitializeComponent();

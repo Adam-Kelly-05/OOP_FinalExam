@@ -9,7 +9,7 @@
         public int AvailableTickets { get; set; }
     }
 
-    public class VIPTickets : Ticket
+    public class VIPTicket : Ticket
     {
         public string AdditionalExtras { get; set; }
 
